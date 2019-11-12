@@ -17,23 +17,22 @@ button,
         color: rgb(185, 185, 185);
     }
 
-    &.dark {
-        line-height: 1;
+    &.arrow {
+     
         font-family: $heading-fontfamily;
-        font-size: inherit;
+        font-size: 5em;
         background-color: transparent;
         color: rgb(255, 255, 255);
         padding: .5em 1.2em;
         display: inline-block;
         margin: .5em;
         border-radius: .5em;
-        border: 1px solid white;
         text-decoration: none;
-        
+      }
     
         &:hover {
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);}
+            background-color:none;
+            color: rgb(154, 252, 255);}
     }
-}
+
 

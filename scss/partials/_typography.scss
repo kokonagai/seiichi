@@ -11,7 +11,6 @@ body {
 /* HEADINGs */
 
 h1, h2, h3 {
-    font-family: $heading-fontfamily;
     margin: .5em 0;
     font-weight: 400;
 }
@@ -22,16 +21,31 @@ h1 {
     font-weight: 700;
 }
 h2 {
+    font-family: lato, sans-serif;
+    max-width: 10em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-top: -.3em;
     font-size: 2em;
     line-height: 1.1;
 }
 h3 {
-    font-size: 1.5em;
+    font-family: lato, sans-serif;
+    max-width: 8em;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 3em;
+    text-align: center;
     line-height: 1.2;
 }
 
 p {
+    font-size: .9em;
+    text-align: left;
     max-width: 35em; 
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 100;
 }
 
 
@@ -65,24 +79,42 @@ p.meta {
 } 
 
 
-/* Links */
-a {color: $color-links;}
-a:hover { color: $color-links-dark;}
+
 
 /* HORIZONTAL RULE */
-
 hr {
     border: 0;
     height: 1px;
-    background: rgba(0,0,0,.15);
-    margin: 3em 0;
-}
-
-blockquote {
+    background: rgba(0, 0, 0, 0.15);
+    margin: 3em 0; }
+  
+  blockquote {
+      
+    text-align: left;
+    margin: 0 auto;
+    font-family: lato, sans-serif;
+    font-weight: 100;
+    // font-style: italic;
     max-width: 20em;
-    font-style: italic;
     color: grey;
-}
+    line-height: 1em;
+    font-size: 2.1em;
+    }
+  
+  .aligned::before {
+    content: "\201C";
+    position: relative;
+    left: -.5%;
+    margin-left: -5%; }
+  
+  .aligned::after {
+    content: "\201D"; }
+  
+
+
+/* Links */
+a {color: $color-links;}
+a:hover { color: $color-links-dark;}
 
 /* TYPE SPECIMEN */
 

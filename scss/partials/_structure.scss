@@ -76,7 +76,7 @@
             }
         }
  
-        background: rgb(9, 207, 191);
+        background: rgb(0, 190, 181);
     }
 }
 
@@ -270,3 +270,18 @@ section {
       [data-scroll="out"].split-crossed-left .text-block {
         transform: translateX(-200px);
       } 
+
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .centered {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+
