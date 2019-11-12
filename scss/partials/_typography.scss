@@ -1,0 +1,101 @@
+/* BODY */
+
+body {
+    font-family: $body-fontfamily;
+    font-size: 100%;
+    line-height: 1.4;
+    color: $color-text-body;
+    
+}
+
+/* HEADINGs */
+
+h1, h2, h3 {
+    font-family: $heading-fontfamily;
+    margin: .5em 0;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2em;
+    line-height: 1.1;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+p {
+    max-width: 35em; 
+}
+
+
+h3.sectionhead {
+    font-size: $body-fontfamily;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.sectionhead:after {
+    display: block;
+    content: "";
+    width: 120px;
+    border: 3px solid $color-accent;
+    margin: 1em auto 2.5em auto;
+}
+
+.meta {
+    font-size: .8em;
+    color: $color-midgrey;
+    text-align: left;
+    text-transform: uppercase;
+
+
+}
+
+p.meta {
+   max-width: 100%;
+} 
+
+
+/* Links */
+a {color: $color-links;}
+a:hover { color: $color-links-dark;}
+
+/* HORIZONTAL RULE */
+
+hr {
+    border: 0;
+    height: 1px;
+    background: rgba(0,0,0,.15);
+    margin: 3em 0;
+}
+
+blockquote {
+    max-width: 20em;
+    font-style: italic;
+    color: grey;
+}
+
+/* TYPE SPECIMEN */
+
+.mainhead {
+    font-family: $heading-fontfamily;
+    font-size: 5em;
+    color: $color-accent;
+    margin-bottom: 0;
+}
+
+.subhead {
+    font-family: $body-fontfamily;
+    font-weight: 400;
+    color: $color-midgrey;
+    margin-bottom: 1em;
+}
