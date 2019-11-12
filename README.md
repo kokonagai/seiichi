@@ -1,4 +1,4 @@
 # seiichi
 Art 258 Coded Final Project
 
-[View Demo](https://github.com/kokonagai/seiichi)
+[View Demo](https://kokonagai.github.io/seiichi/)
