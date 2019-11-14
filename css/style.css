@@ -47,10 +47,9 @@ h1 {
 
 h2 {
   font-family: lato, sans-serif;
-  max-width: 10em;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 100;
   margin-top: -.3em;
   font-size: 4em;
   line-height: 1.1; }
@@ -59,7 +58,7 @@ h3 {
   font-family: lato, sans-serif;
   max-width: 8em;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 3em;
   text-align: center;
   line-height: 1.2; }
@@ -82,7 +81,7 @@ h3.sectionhead {
   display: block;
   content: "";
   width: 120px;
-  border: 3px solid #77cdff;
+  border: 3px solid #f0f9ff;
   margin: 1em auto 2.5em auto; }
 
 .meta {
@@ -131,7 +130,7 @@ a:hover {
 .mainhead {
   font-family: lato, sans-serif;
   font-size: 5em;
-  color: #77cdff;
+  color: #f0f9ff;
   margin-bottom: 0; }
 
 .subhead {
@@ -158,13 +157,16 @@ button,
     color: #b9b9b9; }
   button.arrow,
   .button.arrow {
+    position: absolute;
+    bottom: -1em;
+    right: -.5em;
     font-family: lato, sans-serif;
     font-size: 5em;
     background-color: transparent;
     color: white;
-    padding: .5em 1.2em;
+    padding: 0;
     display: inline-block;
-    margin: .5em;
+    margin: 0;
     border-radius: .5em;
     text-decoration: none; }
   button:hover,
@@ -375,22 +377,42 @@ body {
 
 section {
   padding: 2em 4em;
+  overflow-x: hidden;
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
   place-items: center; }
 
 /* HERO SECTION */
-.hero {
-  background-color: #000001;
+.hero .container {
+  background-image: url("../img/c8zBW.jpg");
   background-size: cover;
-  padding: 6em 1em;
+  padding: 20em 20em;
   color: #fff; }
-  .hero p {
+  .hero .container p {
     margin-left: auto;
     margin-right: auto; }
-  .hero h2 {
-    font-size: 4em; }
+  .hero .container h2 {
+    font-size: 4em;
+    font-weight: 200;
+    color: #63d0d0; }
+
+/*MUSIC PLAYER */
+.player {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.youtube {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+  .youtube iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
 
 /* FOOTER */
 .site-footer .site-nav ul {
@@ -513,7 +535,8 @@ section {
 .container {
   position: relative;
   text-align: center;
-  color: white; }
+  color: white;
+  width: 100%; }
 
 .centered {
   position: absolute;
